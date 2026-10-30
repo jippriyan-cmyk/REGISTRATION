@@ -1,1 +1,90 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTER</title>
+    </head>
+
+    <body>
+<center>
+    <h1>STUDENT FORM</h1>
+
+        <form style="padding:20px;">
+            <table border="1">
+                <tr>
+                    <td>NAME</td>
+                    <td>
+                        <input id="name" placeholder="Enter your name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>AGE</td>
+                    <td>
+                        <input id="age" type="number" placeholder="Enter your age">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <input onclick="male()" id="male" type="radio" name="gender" value="male">
+                        MALE
+                        <input onclick="female()" id="female" type="radio" name="gender" value="female">
+                        FEMALE
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        COURSE
+                    </td>
+
+                    <td>
+                        <select id="course">
+                            <option >select</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                            <option>JAVA</option>
+                            <option>C PROGRAM</option>
+                            <option>C++</option>
+                            <option>Pythone</option>
+                        </select>
+                    </td>
+                
+                </tr>
+
+                <tr>
+                    <td>E-mail</td>
+                    <td>
+                        <input id="email" type="email">
+                    </td>
+                </tr>
+                <tr>
+                <th colspan="2">
+                    <button type="button" onclick="uptodate()">save</button>
+                </th>
+                
+                </tr>
+            </table>
+        </form>
+</center>  
+
+<center>
+    <table border="1" id="studentTable">
+
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</td>
+            <th>GENDER</td>
+            <th>E-mail</td>
+            <th>ACTION</td>
+        </tr>
+    
+    </table>
+</center>
+<script src="register.js"></script>
+<link rel="stylesheet" href="register.css">
+    </body>
+</html>
